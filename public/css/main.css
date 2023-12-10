@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #004882;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.content{
+    background-color: white;
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  .container select,input {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  
+  .container:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .container select option {
+    padding: 30px;
+  }
+.fromClass, .amountClass, .toClass, .valueClass{
+    color: black;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+.valueClass{
+    color: black;
+    margin: auto;
+    font-size: 50px;
+}
+
+    button{
+        background-color: #0563af;
+        border: none;
+        border-radius: 30px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #4f7ca0; /* Green */
+        color: white;
+      }
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Exchange!{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        {% endblock %}
+
+        {% block javascripts %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        {{ form_start(form) }}
+        <div class="header">
+            <h1>
+            Convert currencies
+            </h1>
+        </div>
+        <div class="content"> 
+            <div>
+                <div class="container">
+                    <div class="amountClass">Amount;{{ form_row(form.amount,{'label': false}) }}</div>
+                    <div class="fromClass">From:{{ form_row(form.from,{'label': false})}}</div>
+                    <div class="toClass">To:{{ form_row(form.to,{'label': false}) }}</div>
+                </div>
+                <div class="valueClass">{{value}}</div>
+            </div>   
+            <div class="buttonClass"> {{ form_row(form.submit) }} </div>
+        </div>
+        {{ form_end(form) }}
+        {% endblock %}
+    </body>
+</html>
